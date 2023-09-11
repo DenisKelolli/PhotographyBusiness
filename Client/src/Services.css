@@ -1,0 +1,28 @@
+.ServicesContainer {
+    padding: 50px 0;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.ServicesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.ServicesCard {
+    border: 1px solid #e5e5e5;
+    padding-top: 30px;
+    transition: transform 0.3s;
+}
+
+.ServicesImage {
+    width: 80%;
+    object-fit: cover;
+}
+
+.ServicesH1{
+    font-size: 36px;
+}
