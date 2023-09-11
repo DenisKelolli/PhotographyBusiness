@@ -23,6 +23,14 @@
     object-fit: cover;
 }
 
-.ServicesH1{
+.ServicesH1 {
     font-size: 36px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .ServicesGrid {
+        grid-template-columns: 1fr; /* Makes it one card per row on mobile */
+        gap: 20px; 
+    }
 }
