@@ -1,0 +1,45 @@
+.MyWorkContainer {
+    padding: 50px 0;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.WorkGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.WorkImage {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.MyWorkH1{
+    text-align: center;
+    font-size: 36px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .WorkGrid {
+        grid-template-columns: 1fr; /* Makes it one photo per row on mobile */
+        padding-left: 10px; /* Adding white space to the left */
+        padding-right: 10px; /* Adding white space to the right */
+    }
+
+    .WorkImage {
+        margin-left: auto; /* centers the image horizontally */
+        margin-right: auto;
+        max-width: 300px; /* limits the image width to have white spaces on the sides */
+        max-height: 400px;
+    }
+
+    .MyWorkContainer {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+

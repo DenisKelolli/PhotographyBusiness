@@ -1,12 +1,12 @@
 import React from 'react';
 import './Services.css';
-import image1 from "../public/photography-services-image1.jpg"
-import image2 from "../public/photography-services-image2.jpg"
-import image3 from "../public/photography-services-image3.jpg"
+import image1 from "/photography-services-image1.jpg"
+import image2 from "/photography-services-image2.jpg"
+import image3 from "/photography-services-image3.jpg"
 
 function Services() {
     return (
-        <section className="ServicesContainer">
+        <section id="services" className="ServicesContainer">
             <h1 className='ServicesH1'>Services</h1>
             <div className="ServicesGrid">
                 <div className="ServicesCard">
@@ -19,7 +19,7 @@ function Services() {
                 </div>
                 <div className="ServicesCard">
                     <img src={image3} alt="Service 3" className="ServicesImage" />
-                    <h2>Families</h2>
+                    <h2>Events</h2>
                 </div>
             </div>
         </section>

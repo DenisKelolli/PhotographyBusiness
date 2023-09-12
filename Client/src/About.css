@@ -1,0 +1,59 @@
+.AboutMeContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+}
+
+.ProfileImageContainer {
+    flex: 1;
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;  /* Centering the image within the container */
+    align-items: center;
+}
+
+.ProfileImage {
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 20px;   /* For a rounded profile image */
+    object-fit: cover;
+    margin-top: 24px;
+}
+
+.InfoContainer {
+    flex: 2;
+    font-size: 24px;
+}
+
+.AboutMeH1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Media Query for mobile view */
+@media (max-width: 768px) {
+    .AboutMeContainer {
+        flex-direction: column;
+    }
+
+    .ProfileImageContainer {
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .ProfileImage {
+        max-width: 70%; 
+        height: auto; 
+        border-radius: 20px;   /* For a rounded profile image */
+        object-fit: cover;
+    }
+
+    .InfoContainer{
+        margin-left: 65px;
+        margin-right: 50px;
+    }
+}
+

@@ -30,11 +30,16 @@ body {
 .navbar-right li {
     margin-left: 30px;
     cursor: pointer;
+}
+
+.navbar-right li a {
+    text-decoration: none; /* Remove the default underline */
+    color: inherit; /* Inherit color from parent or use black (#000) or any desired color */
     transition: color 0.3s;
 }
 
-.navbar-right li:hover {
-    color: #007BFF; 
+.navbar-right li a:hover {
+    color: #007BFF;
 }
 
 .hamburger {
@@ -69,7 +74,6 @@ body {
         display: flex;
         right: 0;
         top: 100%;
-        
     }
 
     .navbar-right li {
